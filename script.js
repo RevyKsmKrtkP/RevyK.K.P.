@@ -32,7 +32,7 @@ function startQuiz() {
 
 function generateQuestion() {
   let num1, num2, operator, answer;
-  const operators = ["+", "-", "*", "/"];
+  const operators = ["+", "-", "pangkat", "/"];
 
   switch (level) {
     case "easy":
