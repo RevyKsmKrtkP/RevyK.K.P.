@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tebak-Tebakan Matematika SMA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Tebak-Tebakan Matematika SMA</h1>
+    <div id="menu">
+      <label for="level">Pilih Level:</label>
+      <select id="level">
+        <option value="easy">Mudah</option>
+        <option value="medium">Sedang</option>
+        <option value="hard">Sulit</option>
+      </select>
+      <button id="startBtn">Mulai Quiz</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+      <h2 id="question"></h2>
+      <input type="number" id="answer" placeholder="Masukkan jawaban..." />
+      <button id="submitBtn">Kirim Jawaban</button>
+      <h3 id="feedback"></h3>
+      <p>Skor: <span id="score">0</span></p>
+      <p>Pertanyaan ke-<span id="questionCount">1</span> dari 10</p>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Selamat! Kamu menyelesaikan quiz 🎉</h2>
+      <p>Skor Akhir: <span id="finalScore"></span></p>
+      <button id="retryBtn">Main Lagi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
